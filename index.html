@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Content Index</title>
+    
+    <!-- デザインを整えるためのTailwind CSSを読み込みます -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- アイコンを表示するためのFontAwesomeを読み込みます -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* 全体の基本フォントを設定 */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f8fafc; /* 薄いグレーの背景色 */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- ナビゲーションバー（上部の帯） -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <i class="fas fa-layer-group text-indigo-600 text-xl mr-2"></i>
+                    <span class="font-bold text-xl text-gray-900">My Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-6xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        
+        <!-- ページタイトルと説明 -->
+        <header class="text-center mb-16">
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-4 text-gray-900 tracking-tight">コンテンツ一覧</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto text-lg">
+                これまで作成したWebサイトやアプリケーションのナビゲーションページです。目的のカテゴリから各コンテンツへアクセスできます。
+            </p>
+        </header>
+
+        <!-- ==========================================
+             カテゴリ1：フィットネス・トレーニング
+        ========================================== -->
+        <section class="mb-16">
+            <!-- カテゴリタイトル -->
+            <div class="flex items-center mb-6 border-b border-gray-200 pb-3">
+                <div class="bg-blue-100 p-2 rounded-lg mr-3 text-blue-600">
+                    <i class="fas fa-dumbbell text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800">フィットネス・トレーニング</h2>
+            </div>
+
+            <!-- カード一覧（横並びのグリッド） -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- カード：フィットネス大学 -->
+                <a href="https://web4869.github.io/fitness_university/" target="_blank" rel="noopener noreferrer" class="block group">
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-blue-200 h-full flex flex-col">
+                        <!-- カード上部の画像エリア（アイコンで代用） -->
+                        <div class="h-48 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-running text-7xl text-blue-200 group-hover:scale-110 transition-transform duration-500"></i>
+                            <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        </div>
+                        <!-- カード下部のテキストエリア -->
+                        <div class="p-6 flex-grow flex flex-col">
+                            <div class="flex items-start justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">フィットネス大学</h3>
+                                <i class="fas fa-external-link-alt text-gray-300 text-sm mt-1"></i>
+                            </div>
+                            <p class="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">
+                                健康的な身体づくりのためのトレーニングやフィットネスに関する情報をまとめたサイトです。
+                            </p>
+                            <!-- タグ -->
+                            <div class="mt-auto">
+                                <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-100">
+                                    運動・トレーニング
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 今後ここにフィットネス系の新しいサイトを追加できます -->
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             カテゴリ2：食事・ヘルスケア
+        ========================================== -->
+        <section class="mb-16">
+            <!-- カテゴリタイトル -->
+            <div class="flex items-center mb-6 border-b border-gray-200 pb-3">
+                <div class="bg-green-100 p-2 rounded-lg mr-3 text-green-600">
+                    <i class="fas fa-utensils text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800">食事・ヘルスケア</h2>
+            </div>
+
+            <!-- カード一覧（横並びのグリッド） -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- カード：健美食 -->
+                <a href="https://web4869.github.io/kenbisyoku/" target="_blank" rel="noopener noreferrer" class="block group">
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-green-200 h-full flex flex-col">
+                        <!-- カード上部の画像エリア（アイコンで代用） -->
+                        <div class="h-48 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center relative overflow-hidden">
+                            <i class="fas fa-leaf text-7xl text-green-200 group-hover:scale-110 transition-transform duration-500"></i>
+                            <div class="absolute inset-0 bg-green-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                        </div>
+                        <!-- カード下部のテキストエリア -->
+                        <div class="p-6 flex-grow flex flex-col">
+                            <div class="flex items-start justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">健美食</h3>
+                                <i class="fas fa-external-link-alt text-gray-300 text-sm mt-1"></i>
+                            </div>
+                            <p class="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">
+                                内側からの美しさと健康を作る、食事や栄養に関する知識・レシピをまとめたサイトです。
+                            </p>
+                            <!-- タグ -->
+                            <div class="mt-auto">
+                                <span class="inline-block px-3 py-1 bg-green-50 text-green-700 text-xs font-semibold rounded-full border border-green-100">
+                                    栄養・レシピ
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 今後ここに食事・健康系の新しいサイトを追加できます -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-white border-t border-gray-200 mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 My Portfolio. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
